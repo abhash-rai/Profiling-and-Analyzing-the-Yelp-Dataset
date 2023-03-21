@@ -12,7 +12,7 @@ In this case, you may want to save as a PDF to ensure your formatting remains in
 <h3 align="center"><b>Fig: Yelp Database Schema</b></h3>
 <br><br>
 
-# Part 1: Yelp Dataset Profiling and Understanding
+<h1 align='center'>Part 1: Yelp Dataset Profiling and Understanding</h1>
 
 ## 1. Profile the data by finding the total number of records for each of the tables below:
 
@@ -320,10 +320,12 @@ Ouput:
 
 **SQL code used to arrive at answer:**
 
-    select name, fans 
+    select 
+    	name, 
+	fans 
     from user
     order by fans desc
-    limit 10
+    limit 10;
 
 
 **Copy and Paste the Result Below:**
@@ -345,7 +347,7 @@ Ouput:
 
 <br><br><br>
 
-## Part 2: Inferences and Analysis
+<h1 align='center'>Part 2: Inferences and Analysis</h1>
 
 #### 1. Pick one city and category of your choice and group the businesses in that city or category by their overall star rating. Compare the businesses with 2-3 stars to the businesses with 4-5 stars and answer the following questions. Include your code.
 	
@@ -383,13 +385,13 @@ Ouput:
 ## 2. Group business based on the ones that are open and the ones that are closed. What differences can you find between the ones that are still open and the ones that are closed? List at least two differences and the SQL code you used to arrive at your answer.
 		
 #### I. Difference 1:
-         Businesses that are still open has an average of 12.24 working hours which is 4 hours hours more than the businesses that are closed.
+> Businesses that are still open has an average of 12.24 working hours which is 4 hours hours more than the businesses that are closed.
          
 #### II. Difference 2:
-         Businesses that are still open has slightly greater average review count as compared with those that are closed.
+> Businesses that are still open has slightly greater average review count as compared with those that are closed.
 
 #### III. Difference 3:
-         'York' city has the highest number of open businesses while, 'Toronto' has the greatest number of closed businesses.
+> 'York' city has the highest number of open businesses while, 'Toronto' has the greatest number of closed businesses.
          
 **SQL code used for analysis:**
 
@@ -418,7 +420,7 @@ Ideas for analysis include: Parsing out keywords and business attributes for sen
          
 #### II. Write 1-2 brief paragraphs on the type of data you will need for your analysis and why you chose that data:
 	
-> I've prepare the yelp dataset so as to enable a machine learning alorithm to use the dataset to make predictions about any business start rating. The dataset output from my query can be used to feed into a ML model directly as it is already clean. Although, data transformation may be required if needed. Note: The dataset will contain numeric as well as categorical data.The dataset has 743 rows by 8 column features out of which 2 are categorical and 6 are numeric data. I've renamed the column feature name so as to perfectly depict what the column is about. So, understanding the dataset won't be a problem. Have fun with it!
+> I've prepare the yelp dataset so as to enable a machine learning alorithm to use the dataset to make predictions about any business start rating. The dataset output from my query can be used to feed into a ML model directly as it is already clean. Although, data transformation may be required if needed. Note: The dataset will contain numeric as well as categorical data. <br><br> The dataset has 743 rows by 8 column features out of which 2 are categorical and 6 are numeric data. I've renamed the column feature name so as to perfectly depict what the column is about. So, understanding the dataset won't be a problem. Have fun with it!
                   
 #### III. Output of your finished dataset:
         
